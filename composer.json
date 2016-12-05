@@ -1,0 +1,13 @@
+{
+    "name": "lovelock/service-provider",
+    "description": "Service provider",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Frost Wong",
+            "email": "frostwong@gmail.com"
+        }
+    ],
+    "require": {}
+}
