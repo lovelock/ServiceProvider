@@ -39,4 +39,5 @@ ServiceProvider::get(Foo::class, [], false);
 This will initialize a brand new instance of a class whenever it is called.
 
 **Maybe you're worried about code jumping issues, as modern PHP developer, we should use PhpStorm, and there's a plugin named PHP-DI that will save your life.**
-![](http://ww4.sinaimg.cn/large/006y8mN6jw1fah2tbhob6j319s11otcw.jpg)
+
+![](http://ww4.sinaimg.cn/small/006y8mN6jw1fah2tbhob6j319s11otcw.jpg)
