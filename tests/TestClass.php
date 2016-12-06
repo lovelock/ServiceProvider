@@ -6,7 +6,7 @@
  * Time: 9:42 PM
  */
 
-namespace ServiceProvider;
+namespace Tests\ServiceProvider;
 
 
 class TestClass

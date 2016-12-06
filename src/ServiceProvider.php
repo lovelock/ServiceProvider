@@ -9,13 +9,11 @@
 
 namespace ServiceProvider;
 
-use Exception;
-
 class ServiceProvider
 {
     protected static $serviceBag = [];
 
-    public static function getInstance(string $class, array $args, bool $single = true)
+    public static function get(string $class, array $args, bool $single = true)
     {
         if ($single) {
             $id = $class . json_encode($args);
@@ -35,11 +33,11 @@ class ServiceProvider
 
     private function __clone()
     {
-        throw new Exception("This class can not be cloned.");
+        throw new ServiceProviderException('This class can not be cloned.');
     }
 
     private function __wakeup()
     {
-        throw new Exception('This class can not be unserialized.');
+        throw new ServiceProviderException('This class can not be unserialized.');
     }
 }
