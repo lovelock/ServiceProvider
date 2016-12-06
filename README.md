@@ -1,3 +1,5 @@
+![](https://travis-ci.org/lovelock/ServiceProvider.svg?branch=master)
+
 ## Why another ServiceProvider?
 
 As we know, dependency injection is disgusting, so genies created what called Container. However, if we write code depending on a container, we must somehow extend a base class commonly called IoC or DIC, which fails me a lot.
