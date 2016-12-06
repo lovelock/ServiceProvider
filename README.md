@@ -11,8 +11,6 @@ As we know, dependency injection is disgusting, so genies created what called Co
 It plays almost the same role as a container, but it can be accessed wherever you are, and you don't have to give an alias to a service. For example, when you use a container, mostly you'll write this way:
 
 ```php
-<?php
-
 $c = new \Slim\Container($settings);
 $c['foo'] = function($c) {
     return new Foo::class;
@@ -23,24 +21,18 @@ $c['foo'] = function($c) {
 But if you use this ServiceProvider, you can directly access a `Foo`'s instance this way:
 
 ```php
-<?php
-
 ServiceProvider::get(Foo::class);
 ```
 
 If the class `Foo` has more construct arguments, you can just pass them as an array as the second parameter of `ServiceProvider::get`.
 
 ```php
-<?php
-
 ServiceProvider::get(Foo::class, [1, 2, 'bar']);
 ```
 
 By default, you'll access the same instance of a class whenever you access it via `ServiceProvider::get()`, but you have the option to change this
 
 ```php
-<?php
-
 ServiceProvider::get(Foo::class, [], false);
 ```
 
