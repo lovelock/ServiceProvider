@@ -13,7 +13,7 @@ class ServiceProvider
 {
     protected static $serviceBag = [];
 
-    public static function get(string $class, array $args, bool $single = true)
+    public static function get(string $class, array $args = [], bool $single = true)
     {
         if ($single) {
             $id = $class . json_encode($args);
